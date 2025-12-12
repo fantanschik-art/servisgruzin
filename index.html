@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gryzinskiu servis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Главный экран -->
+        <div id="main-screen" class="screen active">
+            <div class="header">
+                <h1 class="animated-title">Gryzinskiu servis</h1>
+                <div class="pulse-animation"></div>
+            </div>
+            
+            <div class="welcome-container">
+                <h2 class="welcome-text">гармоджоба</h2>
+                <div class="quote-box">
+                    <p class="quote">"скоро 2026 год а они еще верят"</p>
+                    <div class="empty-box"></div>
+                </div>
+            </div>
+            
+            <div class="buttons-container">
+                <button class="btn btn-primary" onclick="showProfile()">
+                    <i class="fas fa-user"></i> Мой профиль
+                </button>
+                <button class="btn btn-secondary" onclick="showProjects()">
+                    <i class="fas fa-project-diagram"></i> Мои проекты
+                </button>
+                <button class="btn btn-telegram" onclick="window.open('https://t.me/mark_057', '_blank')">
+                    <i class="fab fa-telegram"></i> Перейти в личные сообщения
+                </button>
+            </div>
+            
+            <div class="footer">
+                <p>Используйте кнопки для навигации</p>
+                <p class="nickname">Gryzin</p>
+            </div>
+        </div>
+        
+        <!-- Экран профиля -->
+        <div id="profile-screen" class="screen">
+            <div class="screen-header">
+                <button class="back-btn" onclick="backToMain()">
+                    <i class="fas fa-arrow-left"></i> Назад
+                </button>
+                <h2>Мой профиль</h2>
+            </div>
+            
+            <div class="content">
+                <div class="profile-card">
+                    <div class="avatar">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Gryzin</h3>
+                    <p class="tagline">Создатель Gryzinskiu servis</p>
+                    
+                    <div class="profile-info">
+                        <p><i class="fas fa-crown"></i> Основатель проектов</p>
+                        <p><i class="fas fa-code"></i> Разработчик</p>
+                        <p><i class="fas fa-rocket"></i> Инноватор</p>
+                    </div>
+                    
+                    <div class="profile-links">
+                        <button class="btn btn-telegram" onclick="window.open('https://t.me/gruzinOTC_057', '_blank')">
+                            <i class="fab fa-telegram"></i> Мой чат
+                        </button>
+                        <button class="btn btn-primary" onclick="window.open('https://t.me/mark_057', '_blank')">
+                            <i class="fas fa-comment-dots"></i> Написать мне
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <p>Gryzinskiu servis © 2025</p>
+            </div>
+        </div>
+        
+        <!-- Экран проектов -->
+        <div id="projects-screen" class="screen">
+            <div class="screen-header">
+                <button class="back-btn" onclick="backToMain()">
+                    <i class="fas fa-arrow-left"></i> Назад
+                </button>
+                <h2>Мои проекты</h2>
+            </div>
+            
+            <div class="content">
+                <div class="projects-list">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Проект 1</h3>
+                        <p>Телеграм канал с новыми технологиями и разработками</p>
+                        <button class="btn btn-project" onclick="window.open('https://t.me/+jEdPyKhAMCNhZjdi', '_blank')">
+                            <i class="fab fa-telegram"></i> Перейти в проект
+                        </button>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>Проект 2</h3>
+                        <p>Сообщество разработчиков и IT-специалистов</p>
+                        <button class="btn btn-project" onclick="window.open('https://t.me/+LhYNAkjlTCFlMWE6', '_blank')">
+                            <i class="fab fa-telegram"></i> Перейти в проект
+                        </button>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Мой чат</h3>
+                        <p>Основной чат для общения и обсуждения проектов</p>
+                        <button class="btn btn-project" onclick="window.open('https://t.me/gruzinOTC_057', '_blank')">
+                            <i class="fab fa-telegram"></i> Перейти в чат
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <p>Все проекты доступны в Telegram</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
